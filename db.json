@@ -1,0 +1,74 @@
+{
+  "Klijenti": [
+    {
+      "id": "c239",
+      "ime": "Stefan Ilić",
+      "email": "stefan.ilic75@gmail.com",
+      "naslov": "Šta je Azure?",
+      "opis": "Hteo bih da dobijem malo više informacija o MS Azure?",
+      "datum": "6/3/2024",
+      "komentari": [
+        {
+          "ime": "Marija Lukić",
+          "email": "lukicmarija@gmail.com",
+          "opis": "Naravno. Azure je fleksibilna i otvorena cloud platforma koja vam omogućava da brzo gradite, raspoređujete i upravljate aplikacijama u data centrima. Azure podržava sve glavne operativne sisteme, jezike ili alate za razvoj i integriše javne cloud aplikacije sa postojećom IT infrastrukturom."
+        }
+      ]
+    },
+    {
+      "id": "8105",
+      "ime": "Dušan Todorović",
+      "email": "dusan99@yahoo.com",
+      "naslov": "Azure enkripcija",
+      "opis": "Pozdrav, zanima me da li su podaci koji su smešteni u Azure enkriptovani? \nHvalaa unapred!",
+      "datum": "6/3/2024",
+      "komentari": [
+        {
+          "ime": "Darko Cerović",
+          "email": "56-2021@ftn.edu.rs",
+          "opis": "Azure pruža enkripciju usluge skladištenja za sve nove i postojeće naloge za skladištenje. Vaši podaci su automatski obezbeđeni."
+        }
+      ]
+    },
+    {
+      "id": "14d4",
+      "ime": "Ivana Živković",
+      "email": "ivana.zivkovic@gmail.com",
+      "naslov": "Azure DevOps administracija projekta",
+      "opis": "Zdravo svima, može li neko da podeli vezu do video tutorijala/dokumenta o tome kako se koristi Azure DevOps za administraciju projekta. Svaka pomoć je dobrodošla.",
+      "datum": "9/3/2024",
+      "komentari": [
+        {
+          "ime": "Željko Žarković",
+          "email": "55-2021@ftn.edu.rs",
+          "opis": "Možda ovo može pomoći: https://learn.microsoft.com/en-us/azure/devops/user-guide/project-admin-tutorial?view=azure-devops"
+        },
+        {
+          "ime": "Ivana Živković",
+          "email": "ivana.zivkovic@gmail.com",
+          "opis": "Hvala na odgovoru."
+        }
+      ]
+    },
+    {
+      "id": "c6ec",
+      "ime": "Nikola Đorđević",
+      "email": "djordjevic.nikola@gmail.com",
+      "naslov": "Nove funkcije",
+      "opis": "Poštovani, gde mogu pronaći detalje o novim funkcijama MS Azure-a?",
+      "datum": "9/3/2024",
+      "komentari": [
+        {
+          "ime": "Predrag Tanasijević",
+          "email": "43-2021@ftn.edu.rs",
+          "opis": "Poštovani, sve detalje vezane za nove funkcije MS Azure-a, možete pronaći na sledećem linku:  https://azure.microsoft.com/en-us/updates/"
+        },
+        {
+          "ime": "Nikola Đorđević",
+          "email": "djordjevic.nikola@gmail.com",
+          "opis": "Hvalaa Vam."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Microsoft azure,Microsoft cloud,Azure,Microsoft azure cloud">
+    <meta name="description" content="Saznajte sve što vas zanima o tome kako Microsoft Azure radi.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/funkcionalnost.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Microsoft Azure: Kako radi?</title>
+</head>
+
+<body style="background-color: #f5faff;">
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <img src="style/image/azure.png" alt="" style="width: 40px; height: 40px; margin-right: 10px;">
+            <a class="navbar-brand" href="index.html">Microsoft Azure</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            MS Azure
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="funkcionalnost.html">Kako radi?</a>
+                            <a class="dropdown-item" href="kreiranje_naloga.html">Kreiranje naloga?</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            MS Azure services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="IaaS.html">IaaS</a>
+                            <a class="dropdown-item" href="PaaS.html">PaaS</a>
+                            <a class="dropdown-item" href="SaaS.html">SaaS</a>
+                            <a class="dropdown-item" href="serverless.html">Serverless</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forum.html">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o_nama.html">About as</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <p id="title">Kako Microsoft Azure radi?</p>
+        </div>
+    </div>
+
+    <div class="container" style="text-align: justify; margin-bottom: 40px;">
+        <p>
+            Azure je javna cloud platforma kompanije Microsoft. Azure pruža veliki set usluga, uključujući platformu kao
+            servis <a id="link" href="PaaS.html">Azure:(PaaS)</a>, infrastrukturu kao servis <a id="link"
+                href="IaaS.html">Azure:(IaaS)</a> i softver kao servis <a id="link" href="SaaS.html">Azure:(SaaS)</a>.
+            Međutim, šta tačno predstavlja Azure i kako funkcioniše?
+        </p>
+        <p>
+            Azure kao i ostale cloud platforme oslanja se na tehnologiju poznatu kao virtualizacija. Većina računarskog
+            hardvera može biti emulirana pomoću softvera. Računarski hardver jednostavno predstavlja skup instrukcija
+            koje su trajno ili polutrajno kodirane u silikonu. Slojevi emulacije se koriste kako bi se mapirale
+            softverske instrukcije na hardverske instrukcije. Ovi slojevi omogućavaju virtualiziranom hardveru da
+            izvršava softver kao stvarni hardver.
+        </p>
+
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+            <div class="video-responsive">
+                <iframe id="video" width="550" height="325"
+                    src="https://www.microsoft.com/en-us/videoplayer/embed/RE2ixGo?postJsllMsg=true"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <p>
+            Esencijalno, cloud predstavlja skup fizičkih servera u jednom ili više datacentru. Datacentri izvršavaju
+            virtualizirani hardver za korisnike. Kako, onda, cloud istovremeno stvara, pokreće, zaustavlja i briše
+            milione instanci virtualiziranog hardvera za milione korisnika?
+        </p>
+
+        <p>
+            Da bismo razumeli servere, pogledajmo arhitekturu hardvera u datacentru. Unutar svakog datacentra nalazi se
+            skup servera smeštenih u rack-ove. Svaki server rack sadrži mnogo server blades-a i mrežni switch. Ovi
+            pružaju mrežnu povezanost i jedinicu za distribuciju napajanja (PDU), koja obezbedjuje električnu energiju.
+            Rack-ovi se ponekad grupišu u veće jedinice poznate kao klasteri.
+        </p>
+
+        <p>
+            Kod Microsoft Azure server rack-ovi ili klasteri, odabrani su da pokreću virtualizirane instance hardvera za
+            korisnike.
+            Medjutim, neki serveri pokreću softver za upravljanje cloud-om, poznat i kao fabric controller. Fabric
+            controller je distribuirana aplikacija sa mnogo odgovornosti. On alocira usluge, prati zdravlje servera i
+            usluge koje se na njemu izvršavaju i obnavlja server kada dodje do kvara.
+        </p>
+
+        <p>
+            Svaka instanca fabric controller-a povezana je sa drugim setom servera koji pokreću softver za cloud
+            orkestraciju, obično poznat kao front end. Front end hostuje web servise, RESTful APIs i interne Azure baze
+            podataka, koje se koriste za sve funkcije u cloud-u.
+        </p>
+
+        <p>
+            Na primer, front end hostuje usluge koje obradjuju zahteve korisnika. Zahtevi alociraju Azure resurse i
+            usluge poput Azure Virtual Machines i Azure Cosmos DB. Prvo, front end validira i proverava da li je
+            korisnik ovlašćen za alokaciju traženih resursa. Ako jeste, front end proverava bazu podataka kako bi
+            pronašao server rack sa dovoljnim kapacitetom, što primorava fabric controller da alocira resurse.
+        </p>
+
+        <p>
+            Azure je ogromna kolekcija servera i mrežnog hardvera, koji pokreće kompeksan set distribuiranih aplikacija.
+            Ove aplikacije orkestriraju konfiguraciju i operaciju virtualiziranog hardvera i softvera na tim serverima.
+            Orkestracija ovih servera je ono što čini Azure tako moćnim. Sa Azure-om, korisnici ne moraju održavati i
+            nadogradjivati svoj hardver, jer azure to radi iza scene.
+        </p>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about" style="text-align: center;">
+                    <h3>Projekat radili:</h3>
+                    <ul>
+                        <li>Predrag Tanasijević 43/2021</li>
+                        <li>Željko Žarković 55/2021</li>
+                        <li>Darko Cerović 56/2021</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section contact" style="text-align: center;">
+                    <h3>Kontakt:</h3>
+                    <span><i class="fas fa-envelope"></i> 43-2021@ftn.edu.rs</span><br>
+                    <span><i class="fas fa-envelope"></i> 55-2021@ftn.edu.rs</span><br>
+                    <span><i class="fas fa-envelope"></i> 56-2021@ftn.edu.rs</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 WEB TEHNOLOGIJE
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

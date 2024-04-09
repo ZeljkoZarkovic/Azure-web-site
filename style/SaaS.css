@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#navbar {
+    background-color: #f5faff;
+    font-size: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.jumbotron {
+    background: linear-gradient(to right, #051e32, #003659, #045293);
+    color: white;
+}
+
+#img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#title {
+    font-size: 40pt;
+    margin-bottom: 0;
+}
+
+.jumbotron .container .lead {
+    font-size: 20pt;
+}
+
+#heading1 {
+    font-size: 20pt;
+}
+
+#heading2 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#li {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #003659;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.about,
+.links,
+.contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #051e32;
+    color: #fff;
+    padding-bottom: 17px;
+}
+
+.footer-section ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}

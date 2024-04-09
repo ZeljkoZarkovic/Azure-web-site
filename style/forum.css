@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#navbar {
+    background-color: #f5faff;
+    font-size: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.jumbotron {
+    background: linear-gradient(to right, #051e32, #003659, #045293);
+    color: white;
+}
+
+#title {
+    font-size: 40pt;
+    margin-bottom: 0;
+}
+
+#fb {
+    color: white;
+}
+
+#sr:focus {
+    outline: none;
+}
+
+#b1 {
+    background-color: #2994e0;
+    border-radius: 10px;
+}
+
+#b1:hover {
+    background-color: white;
+    color: #2994e0;
+}
+
+#cr {
+    display: flex;
+    flex-direction: row;
+    border: 2 solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border: 2px solid #2994e0;
+    margin-bottom: 2rem !important;
+    border-radius: 10px;
+}
+
+#card-body {
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+#card-footer {
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: end;
+}
+
+#card-title {
+    margin-bottom: 0;
+}
+
+#fa-com {
+    cursor: pointer;
+}
+
+#sr {
+    border: 2px solid #2994e0;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 12px;
+}
+
+label {
+    display: block;
+}
+
+#btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    color: black;
+}
+
+.in {
+    width: 100%;
+    padding-left: 10px;
+}
+
+#sd {
+    z-index: 100;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    animation-name: Slide;
+    animation-duration: 2s;
+    width: 800px;
+}
+
+input {
+    border: 2px solid #2994e0;
+    background-color: #f5faff;
+    border-radius: 10px;
+}
+
+textarea {
+    border: 2px solid #2994e0;
+    background-color: #f5faff;
+    border-radius: 10px;
+}
+
+#com {
+    display: none;
+    border: 2px solid #2994e0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#com1 {
+    display: none;
+    border: 2px solid #2994e0;
+    margin-bottom: 20px;
+    background-color: #f5faff;
+    border-radius: 10px;
+}
+
+#prev {
+    background-color: #2994e0;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#prev:hover {
+    color: #2994e0;
+    background-color: white;
+}
+
+#next {
+    background-color: #2994e0;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+#next:hover {
+    color: #2994e0;
+    background-color: white;
+}
+
+#btn_new {
+    background-color: #2994e0;
+    border-radius: 10px;
+}
+
+#btn_new:hover {
+    color: #2994e0;
+    background-color: white;
+}
+
+#unos {
+    border-radius: 10px;
+}
+
+#exit {
+    cursor: pointer;
+}
+
+#mini {
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 950px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    border: 2px solid #2994e0;
+}
+
+
+
+@media (max-width: 769px) {
+
+    #sd {
+        z-index: 100;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 7%;
+        transition: all 1s;
+        width: 350px;
+
+    }
+
+    #card-footer {
+        width: 85%;
+    }
+
+    #com1 {
+        width: 90%;
+    }
+
+    #mini {
+        width: 200px;
+        font-size: 10pt;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #com {
+        width: 90%;
+    }
+
+}
+
+
+@keyframes Slide {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+.pagination a {
+    padding: 6px 12px;
+    font-weight: 450;
+    text-decoration: none;
+    font-size: 22px;
+    color: #2994e0;
+    border-radius: 25%;
+    transition: 0.5s ease-in-out;
+}
+
+a.active {
+    background-color: #2994e0;
+    color: white;
+}
+
+footer {
+    background-color: #003659;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.about,
+.links,
+.contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #051e32;
+    color: #fff;
+    padding-bottom: 17px;
+}
+
+.footer-section ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}

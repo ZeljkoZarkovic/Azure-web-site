@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Fredoka", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#navbar {
+    background-color: #f5faff;
+    font-size: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.jumbotron_1 {
+    background-image: url(image/Microsoft-Cloud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 570px;
+}
+
+#video {
+    border: 3px solid #0078d4;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+#video:hover {
+    border: 3px solid white;
+    transform: scale(1.1);
+}
+
+#title1 {
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+#card_1 {
+    border-radius: 20px;
+    height: 540px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#card_1:hover {
+    border: 3px solid #2994e0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+#btn_1 {
+    background-color: #2994e0;
+}
+
+#btn_1:hover {
+    background-color: white;
+    color: #2994e0;
+}
+
+#jumbotron_2 {
+    color: white;
+    background-color: #045293;
+}
+
+#link {
+    font-size: 15pt;
+    color: white;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+#link:hover {
+    font-size: 20pt;
+    transition: all 0.5s ease;
+}
+
+.row .col-lg-3 .card .card-footer {
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+#title2 {
+    font-size: 40pt;
+    text-align: center;
+}
+
+#btn_2 {
+    background-color: #2994e0;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#btn_2:hover {
+    background-color: white;
+    color: #2994e0;
+}
+
+@media (max-width: 767.98px) {
+    #card_1 {
+        height: 410px;
+    }
+
+    .video-responsive {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+    }
+
+    .video-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .jumbotron_1 {
+        background-image: url(image/Microsoft-Cloud.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: 370px;
+    }
+
+    #col-lg-6 {
+        padding-top: 20px;
+        padding-right: 0px;
+    }
+
+}
+
+footer {
+    background-color: #003659;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.about,
+.links,
+.contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #051e32;
+    color: #fff;
+    padding-bottom: 17px;
+}
+
+.footer-section ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
